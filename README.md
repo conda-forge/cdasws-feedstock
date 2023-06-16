@@ -1,11 +1,11 @@
-About cdasws
-============
+About cdasws-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cdasws-feedstock/blob/main/LICENSE.txt)
 
 Home: https://cdaweb.gsfc.nasa.gov/WebServices/REST
 
 Package license: NOSL
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cdasws-feedstock/blob/main/LICENSE.txt)
 
 Summary: NASA's Coordinated Data Analysis System Web Service Client Library
 
