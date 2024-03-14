@@ -1,5 +1,5 @@
 {% set name = "cdasws" %}
-{% set version = "1.7.43" %}
+{% set version = "1.7.46" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cdasws-{{ version }}.tar.gz
-  sha256: 717d59d4098ae310ccc2c39251a731ce546a68aec3417c78c24ee2c78d4d381f
+  sha256: 3dfd518e7f55ba155c107880ac63c6066f4c2ac2a5663cba36c4574cdc1ec766
 
 build:
   noarch: python
