@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cdasws-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cdasws-{{ version }}.tar.gz
   sha256: 703f3d00f81e21bf836284a3ec2344db563ec3dfdb5b23d2efcb29411e7c20c9
 
 build:
