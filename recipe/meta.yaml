@@ -1,3 +1,4 @@
+{% set python_min = python_min|default("3.6") %}
 {% set name = "cdasws" %}
 {% set version = "1.8.6" %}
 
@@ -6,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cdasws-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cdasws-{{ version }}.tar.gz
   sha256: 703f3d00f81e21bf836284a3ec2344db563ec3dfdb5b23d2efcb29411e7c20c9
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 5
 
 requirements:
   host:
@@ -31,8 +32,7 @@ test:
   commands:
     - pip check
   requires:
-    - python {{ python_min}}
-    - pip
+    - python {{ python_min }}
 
 about:
   home: https://cdaweb.gsfc.nasa.gov/WebServices/REST
