@@ -1,4 +1,4 @@
-{% set python_min = python_min|default("0.1a0") %}
+{% set python_min = python_min|default("3.6") %}
 {% set name = "cdasws" %}
 {% set version = "1.8.6" %}
 
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 4
+  number: 5
 
 requirements:
   host:
