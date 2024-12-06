@@ -1,6 +1,6 @@
 {% set python_min = python_min|default("3.6") %}
 {% set name = "cdasws" %}
-{% set version = "1.8.8" %}
+{% set version = "1.8.9" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cdasws-{{ version }}.tar.gz
-  sha256: a286a508ff5c7aa5b9e8c5b583b18c795596113c3a5015a2c96a4ce4399f79ee
+  sha256: f2eb51d24855c38a4e4a861889643f0438d1ff14be8c81780674286e58e4fcd0
 
 build:
   noarch: python
@@ -17,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}.*
+    - python >={{ python_min }}.*
     - pip
     - setuptools
   run:
-    - python {{ python_min }}
+    - python >={{ python_min }}.*
     - python-dateutil >=2.8.0
     - requests >=2.20
     - urllib3 >=1.24.1
@@ -32,7 +32,7 @@ test:
   commands:
     - pip check
   requires:
-    - python {{ python_min }}
+    - python >={{ python_min }}.*
     - pip
 
 about:
