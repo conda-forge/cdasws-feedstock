@@ -1,6 +1,6 @@
 {% set python_min = python_min|default("3.6") %}
 {% set name = "cdasws" %}
-{% set version = "1.8.9" %}
+{% set version = "1.8.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cdasws-{{ version }}.tar.gz
-  sha256: f2eb51d24855c38a4e4a861889643f0438d1ff14be8c81780674286e58e4fcd0
+  sha256: ef6ebd6831f1a23c0aaaf4a035da532a1ac8dc1400baf6565d899116fbdb7be9
 
 build:
   noarch: python
