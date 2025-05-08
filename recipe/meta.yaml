@@ -40,6 +40,23 @@ about:
   summary: NASA's Coordinated Data Analysis System Web Service Client Library
   license: NOSL
   license_file: NASA_Open_Source_Agreement_1.3.txt
+  description: |
+    This library provides a simple python interface to the heliophysics data
+    and services of
+    NASA's [Coordinated Data Analysis System](https://cdaweb.gsfc.nasa.gov/)
+    (CDAS).  This library implements the client side of the
+    [CDAS RESTful web services](https://cdaweb.gsfc.nasa.gov/WebServices/REST/)
+    and can return data from any of
+    [these datasets](https://cdaweb.gsfc.nasa.gov/misc/Notes.html) in a
+    [SpacePy datamodel](https://spacepy.github.io/datamodel.html),
+    [xarray.Dataset](https://docs.xarray.dev/en/stable/generated/xarray.Dataset.html), or
+    [pandas.DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
+    with all source and
+    [ISTP/SPDF](https://spdf.gsfc.nasa.gov/sp_use_of_cdf.html) metadata.
+    Frequently asked questions concerning this library are at
+    [FAQ](https://cdaweb.gsfc.nasa.gov/WebServices/REST/py/FAQ.html).
+    For more general details about the CDAS web services, see
+    https://cdaweb.gsfc.nasa.gov/WebServices/REST/.
 
 extra:
   recipe-maintainers:
