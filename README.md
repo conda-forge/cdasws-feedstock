@@ -9,6 +9,24 @@ Package license: NOSL
 
 Summary: NASA's Coordinated Data Analysis System Web Service Client Library
 
+This library provides a simple python interface to the heliophysics data
+and services of
+NASA's [Coordinated Data Analysis System](https://cdaweb.gsfc.nasa.gov/)
+(CDAS).  This library implements the client side of the
+[CDAS RESTful web services](https://cdaweb.gsfc.nasa.gov/WebServices/REST/)
+and can return data from any of
+[these datasets](https://cdaweb.gsfc.nasa.gov/misc/Notes.html) in a
+[SpacePy datamodel](https://spacepy.github.io/datamodel.html),
+[xarray.Dataset](https://docs.xarray.dev/en/stable/generated/xarray.Dataset.html), or
+[pandas.DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
+with all source and
+[ISTP/SPDF](https://spdf.gsfc.nasa.gov/sp_use_of_cdf.html) metadata.
+Frequently asked questions concerning this library are at
+[FAQ](https://cdaweb.gsfc.nasa.gov/WebServices/REST/py/FAQ.html).
+For more general details about the CDAS web services, see
+https://cdaweb.gsfc.nasa.gov/WebServices/REST/.
+
+
 Current build status
 ====================
 
@@ -98,12 +116,12 @@ it is possible to build and upload installable packages to the
 [conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
-To manage the continuous integration and simplify feedstock maintenance
+To manage the continuous integration and simplify feedstock maintenance,
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
-For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
+For more information, please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
@@ -130,7 +148,7 @@ merged, the recipe will be re-built and uploaded automatically to the
 everybody to install and use from the `conda-forge` channel.
 Note that all branches in the conda-forge/cdasws-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
