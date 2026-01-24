@@ -21,6 +21,8 @@ and can return data from any of
 [pandas.DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
 with all source and
 [ISTP/SPDF](https://spdf.gsfc.nasa.gov/sp_use_of_cdf.html) metadata.
+Note that this package is included in the [HelioCloud](https://heliocloud.org/)
+base image, so there is no need to install it there.
 Frequently asked questions concerning this library are at
 [FAQ](https://cdaweb.gsfc.nasa.gov/WebServices/REST/py/FAQ.html).
 For more general details about the CDAS web services, see
