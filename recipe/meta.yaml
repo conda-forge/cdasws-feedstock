@@ -1,6 +1,6 @@
-{% set python_min = python_min|default("3.6") %}
+{% set python_min = python_min|default("3.9") %}
 {% set name = "cdasws" %}
-{% set version = "1.8.16" %}
+{% set version = "1.8.18" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cdasws-{{ version }}.tar.gz
-  sha256: 6d914a9ba445bb9f8ff64865170b163b6ca73bcca319b5f6b7a0fdeb40b5ae0a
+  sha256: 3c2afd8f273cdcb0164891c2e15732e8a197095f21fbc01cf134372e4daace5e
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ test:
     - pip
 
 about:
-  home: https://cdaweb.gsfc.nasa.gov/WebServices/REST
+  home: https://berniegsfc.github.io/cdasws/
   summary: NASA's Coordinated Data Analysis System Web Service Client Library
   license: NOSL
   license_file: NASA_Open_Source_Agreement_1.3.txt
@@ -45,7 +45,7 @@ about:
     and services of
     NASA's [Coordinated Data Analysis System](https://cdaweb.gsfc.nasa.gov/)
     (CDAS).  This library implements the client side of the
-    [CDAS RESTful web services](https://cdaweb.gsfc.nasa.gov/WebServices/REST/)
+    [CDAS RESTful web services](https://berniegsfc.github.io/cdasws/)
     and can return data from any of
     [these datasets](https://cdaweb.gsfc.nasa.gov/misc/Notes.html) in a
     [SpacePy datamodel](https://spacepy.github.io/datamodel.html),
@@ -56,9 +56,9 @@ about:
     Note that this package is included in the [HelioCloud](https://heliocloud.org/)
     base image, so there is no need to install it there.
     Frequently asked questions concerning this library are at
-    [FAQ](https://cdaweb.gsfc.nasa.gov/WebServices/REST/py/FAQ.html).
+    [FAQ](https://berniegsfc.github.io/cdasws/py/FAQ.html).
     For more general details about the CDAS web services, see
-    https://cdaweb.gsfc.nasa.gov/WebServices/REST/.
+    https://berniegsfc.github.io/cdasws/.
 
 extra:
   recipe-maintainers:
